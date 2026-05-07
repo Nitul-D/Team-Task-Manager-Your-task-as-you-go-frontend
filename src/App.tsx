@@ -7,8 +7,16 @@ import ProjectsPage from "./pages/projects/ProjectsPage";
 import TasksPage from "./pages/task/TasksPage";
 import ProgressPage from "./pages/progress/ProgressPage";
 import AdminPage from "./pages/admin/AdminPage";
+import { useAuthStore } from "./stores/useAuthStore";
+import { useEffect } from "react";
 
 function App() {
+  const { checkAdminStatus } = useAuthStore();
+
+  useEffect(() => {
+    checkAdminStatus();
+  }, []);
+
   return (
     <>
       <Routes>
