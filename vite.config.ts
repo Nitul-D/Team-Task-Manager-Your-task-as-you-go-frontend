@@ -14,9 +14,7 @@ export default defineConfig({
     host: "0.0.0.0",
     port: Number(process.env.PORT) || 3000,
 
-    allowedHosts: [
-      "team-task-manager-your-task-as-you-go-frontend-production.up.railway.app",
-    ],
+    allowedHosts: true,
   },
   resolve: {
     alias: {
