@@ -8,11 +8,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     host: "0.0.0.0",
-    port: 5173,
+    port: 5000,
   },
   preview: {
     host: "0.0.0.0",
-    port: Number(process.env.PORT) || 4173,
+    port: Number(process.env.PORT) || 3000,
 
     allowedHosts: [
       "team-task-manager-your-task-as-you-go-frontend-production.up.railway.app",
